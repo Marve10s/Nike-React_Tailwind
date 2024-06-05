@@ -1,3 +1,4 @@
+import { hamburger } from "../assets/icons/index.js";
 import { headerLogo } from "../assets/images";
 // import { hamburger } from "../assets/icons";
 import { navLinks } from "../constants/index.js";
@@ -27,6 +28,15 @@ const Nav = () => {
             </li>
           ))}
         </ul>
+        <div className="lg:hidden">
+          <img
+            src={hamburger}
+            alt="hamburger"
+            width={25}
+            height={25}
+            className="h-6 w-6"
+          />
+        </div>
       </nav>
     </header>
   );
